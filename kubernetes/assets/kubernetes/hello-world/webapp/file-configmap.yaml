@@ -1,0 +1,17 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: file-config
+data:
+  application.properties: |-
+    spring.profiles.active=standalone
+    spring.mvc.async.request-timeout=300000
+    spring.zipkin.service.name=tdp-api
+
+    # Web server port (0 = random).
+    server.port=8888
+
+    # Response compression
+    server.compression.enabled=true
+    server.compression.mime-types=text/plain,application/json
+
