@@ -1,4 +1,4 @@
-Deployment are a mean of gathering some resources toghether such as replicaset and pods. 
+Deployment are a mean of gathering some resources together such as replicaset and pods. 
 They also serve as a base for rolling upgrades. 
 
 We usually do not use pods and replicasets manifests but most of the time create deployments 
@@ -13,12 +13,11 @@ then you can simply deploy it
 
 In order to ckeck the web server we are going to expose the service
 
-`pod=$(kubectl get pod --selector=app=hello-world-app -o jsonpath={.items..metadata.name})
-kubectl expose pod $pod --external-ip="[[HOST_IP]]" --port=8080 --target-port=80`{{execute}}
+`kubectl expose deployment hello-world --name=exposed-service --external-ip="[[HOST_IP]]" --port=80 --target-port=80`{{execute}}
 
 you can then try the service at
 
-https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
+https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
 
 
 If you look at the pods that are deployed you'll see that the pod name contains a suffix that was set by the replicaset.
@@ -48,4 +47,20 @@ then execute <br/>
 </p>
 </details>
 
-3. You can also try to delete a pod and see what happens
+3. You can also edit them live using the `kubectl edit` command, it will open vi to edit the resource and apply it upon close of the editor
+<details><summary>solution</summary>
+<br/>
+`kubectl edit deployment hello-world`{{execute}}
+
+```
+  <esc> + <i> : to insert
+  <esc> + <:> + <q> : to quit without saving
+  <esc> + <:> + <x> : to quit and save
+```
+</p>
+
+</details>
+
+
+
+4. You can also try to delete a pod and see what happens

@@ -23,8 +23,8 @@
         "title": "Step 6 - deployments",
         "text": "steps/deployment.md"
       },{
-        "title": "Step XX - whatever",
-        "text": "steps/helm.md"
+        "title": "Step 7 - namaspaces",
+        "text": "steps/namespaces.md"
     }],
     "intro": {
       "text": "intro.md",
