@@ -12,7 +12,8 @@ Let us try to define a config map with a *application.properties* content and mo
 edit *pod.yaml*
 <br/>
 
-```apiVersion: v1
+```
+apiVersion: v1
 kind: Pod
 metadata:
   name: hello-world

@@ -21,9 +21,9 @@ The you can look at what is a node, you can see the details of the virtual machi
 `kubectl describe node node01`{{execute}}
 
 Let's setup the second terminal to display the current states of pods and services
+
 `ifconfig ens3 | grep "inet addr"`{{execute}}
-grap the ip adress and replace it in the following command on the bottom terminal
+
+grab the ip adress and replace it in the following command on the bottom terminal
+
 `mkdir .kube; scp <ip adress>:/root/.kube/config /root/.kube/config; watch kubectl get po,svc`
-
-
- `ls`{{execute HOST1 T2}}
