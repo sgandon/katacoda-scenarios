@@ -26,4 +26,4 @@ Let's setup the second terminal to display the current states of pods and servic
 
 grab the ip adress and replace it in the following command on the bottom terminal
 
-`mkdir .kube; scp <ip adress>:/root/.kube/config /root/.kube/config; watch kubectl get po,svc`
+`mkdir .kube; scp <ip adress>:/root/.kube/config /root/.kube/config; watch kubectl get po,svc,cm,deploy`
