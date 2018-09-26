@@ -1,10 +1,11 @@
-`cd talend`{{execute}}
+`cd test/kubernetes`{{execute}}
 `clear; cat deployment.yaml`{{execute}}
 
 then you deploy it 
 
 `kubectl apply -f deployment.yaml`{{execute}}
 
+Wait for the pods to be created
 then expose
 
 `kubectl expose deployment hello-world --name=exposed-service --external-ip="[[HOST_IP]]" --port=80 --target-port=80`{{execute}}
