@@ -36,7 +36,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
+    "uilayout": "terminal-terminal",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.",
     "showdashboard": true,
     "dashboards": [{"name": "Display 80", "port": 80}, {"name": "Display 8080", "port": 8080}]
