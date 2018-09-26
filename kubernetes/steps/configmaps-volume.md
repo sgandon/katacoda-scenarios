@@ -7,13 +7,14 @@ Let us try to define a config map with a *application.properties* content and mo
 `clear; cat file-configmap.yaml`{{execute}}<br/>
 
 2. Then try to mount the configmap as a volume in the web pod <br/>
+
 <details><summary>solution</summary>
 <p>
+
 edit *pod.yaml*
 <br/>
 
-```
-apiVersion: v1
+```apiVersion: v1
 kind: Pod
 metadata:
   name: hello-world
