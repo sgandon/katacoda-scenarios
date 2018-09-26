@@ -19,3 +19,6 @@ The you can look at what is a node, you can see the details of the virtual machi
 
 
 `kubectl describe node node01`{{execute}}
+
+Let's setup the second terminal to display the current states of pods and services
+`mkdir .kube; scp 172.17.0.4:/root/.kube/config /root/.kube/config; watch kubectl get po,svc`{{execute T2}}
