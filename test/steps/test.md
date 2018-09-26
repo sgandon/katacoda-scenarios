@@ -14,5 +14,7 @@ you can then try the service at
 
 https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
 
-The problem is that when refreshing the wbe page you can see that it is alway the same pod that is targeted.
-Do you have any idea why ? is there some cache handling in the katacoda proxy ?
+The problem is that when refreshing the web page you can see that it is alway the same pod as an host name.
+Do you have any idea why ? 
+
+is there some cache handling in the katacoda proxy ?
