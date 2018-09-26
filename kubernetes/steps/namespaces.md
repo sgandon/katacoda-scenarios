@@ -13,4 +13,4 @@ or in all namespaces
 
 `kubectl get po --all-namespaces`{{execute}}
 
-Advise : if you work with multiple cluster, use a tool called [kubens](https://github.com/ahmetb/kubectx) to avoid specifying the namespace for every command.
+Advise : if you work with multiple clusters, use a tool called [kubens](https://github.com/ahmetb/kubectx) to avoid specifying the namespace for every command.
