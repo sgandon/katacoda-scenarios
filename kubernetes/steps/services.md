@@ -1,9 +1,9 @@
-To learn about service you first need to launch a pod that run a container providing some sort of API to the external world.
-For the exercises we will use a simple hello-world web application that list on a given port any http requests.
+To learn about service you first need to launch a pod that runs a container providing some sort of API to the external world.
+For the exercises we will use a simple hello-world web application that listens on a given port for any http requests.
 
 `cd webapp`{{execute}}
 
-please have a look at the pod definition.
+Please have a look at the pod definition.
 
 `clear; cat pod.yaml`{{execute}}
 
