@@ -14,10 +14,10 @@
       "title": "Step 3 - services",
       "text": "steps/services.md"
     },{
-      "title": "Step 4 - configmaps",
+      "title": "Step 4 - ConfigMaps",
       "text": "steps/configmaps.md"
       },{
-        "title": "Step 5 - configmaps continued",
+        "title": "Step 5 - ConfigMaps continued",
         "text": "steps/configmaps-volume.md"
       },{
         "title": "Step 6 - deployments",
