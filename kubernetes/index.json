@@ -1,6 +1,6 @@
 {
   "title": "Talend Workshop on Kubernetes",
-  "description": "Learn how to get started with kubernetes resources and command line",
+  "description": "Learn how to get started with Kubernetes concepts and the kubectl command line",
   "difficulty": "beginner",
   "time": "1h30 minutes",
   "details": {

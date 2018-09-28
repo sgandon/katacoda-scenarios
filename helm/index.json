@@ -1,6 +1,6 @@
 {
-  "title": "Talend - Helm for Kubernetes (DRAFT)",
-  "description": "Use Helm for Kubernetes to easily deploy applications on your Kubernetes cluster",
+  "title": "Talend Workshop on Helm",
+  "description": "Learn how to use Helm to easily deploy applications on your Kubernetes clusters",
   "difficulty": "beginner",
   "time": "30 minutes",  
   "details": {

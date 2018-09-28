@@ -1,11 +1,11 @@
 {
   "title": "Kubernetes Workshop",
-  "description": "Learn basic Kubernetes resources and play with kubectl command",
+  "description": "Learn basic Kubernetes concepts and play with kubectl command",
   "courses": [{
   "pathway_id": "sgandon",
   "id": "kubernetes",
   "course_id": "kubernetes",
-  "title": "learning Kubernetes basis",
+  "title": "Learning Kubernetes basics",
   "description": "Learn basic Kubernetes resources and play with kubectl command"
   }]
 }
