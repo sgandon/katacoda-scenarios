@@ -5,13 +5,13 @@
   "time": "1h30 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - exploring the cluster",
+      "title": "Step 1 - Exploring the cluster",
       "text": "steps/cluster.md"
     },{
-      "title": "Step 2 - pods",
+      "title": "Step 2 - Pods",
       "text": "steps/pods.md"
     },{
-      "title": "Step 3 - services",
+      "title": "Step 3 - Services",
       "text": "steps/services.md"
     },{
       "title": "Step 4 - ConfigMaps",
@@ -20,10 +20,10 @@
         "title": "Step 5 - ConfigMaps continued",
         "text": "steps/configmaps-volume.md"
       },{
-        "title": "Step 6 - deployments",
+        "title": "Step 6 - Deployments",
         "text": "steps/deployment.md"
       },{
-        "title": "Step 7 - namespaces",
+        "title": "Step 7 - Namespaces",
         "text": "steps/namespaces.md"
     }],
     "intro": {
