@@ -27,7 +27,7 @@ Pod name must be unique and when scaling up.
 Use `kubectl scale` to scale up to 3 pods
 
 <details><summary>solution</summary>
-<br/>
+<p>
 `kubectl scale --replicas=3 deployment/hello-world`{{execute}}
 </p>
 </details>
@@ -35,7 +35,7 @@ Use `kubectl scale` to scale up to 3 pods
 You can also edit to have 2 replicas and apply the *deployment.yaml*
 
 <details><summary>solution</summary>
-<br/>
+<p>
 Edit *deployment.yaml* and set 
 
 ```
@@ -47,8 +47,9 @@ then execute <br/>
 </details>
 
 You can also edit them live using the `kubectl edit` command, it will open vi to edit the resource and apply it upon close of the editor
+
 <details><summary>solution</summary>
-<br/>
+<p>
 `kubectl edit deployment hello-world`{{execute}}
 
 ```
@@ -57,7 +58,6 @@ You can also edit them live using the `kubectl edit` command, it will open vi to
   <esc> + <:> + <x> : to quit and save
 ```
 </p>
-
 </details>
 
 You can also try to delete a pod and see what happens
