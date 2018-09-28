@@ -1,5 +1,5 @@
-To learn about Kubernetes services you first need to launch a pod that run a container providing some sort of API to the external world.
-For the exercise we will use a simple hello-world web application which lists on a given port any http requests.
+To learn about Kubernetes services you first need to launch a pod that runs a container providing some sort of API to the external world.
+For the exercises we will use a simple hello-world web application that listens on a given port for any http requests.
 
 `cd webapp`{{execute}}
 

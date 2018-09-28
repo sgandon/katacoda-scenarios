@@ -2,36 +2,31 @@ This will show you how to deploy a Kubernetes manifest to create a single pod wi
 
 ## Task
 
-You first need to jump into the folder used for this workshop
+You first need to jump into the folder used for this workshop:
 
 `cd talend/kubernetes/hello-world`{{execute}}
 
-Display the pod manifest just to see how it looks like
+Display the pod manifest just to see how it looks like:
 
 `clear; cat pod.yaml`{{execute}}
 
-Deploy the pod into Kubernetes
+Deploy the pod into Kubernetes and watch the second terminal to see how the pod is coming up:
 
-`kubectl create -f pod.yaml
-`{{execute}}
+`kubectl create -f pod.yaml`{{execute}}
 
-Watch the pod coming up
-
-`kubectl get pods -w`{{execute}}
-
-Get the pod status and description
+Get the pod status and description:
 
 `kubectl describe pods hello-cretes`{{execute}}
 
-Get the logs of the running container
+Get the logs of the container:
 
 `kubectl logs hello-cretes`{{execute}}
 
-Run a command in the container very similarly to a docker exec
+Attach to the `hello-cretes` container and run `sh` (very similar to a docker exec):
 
 `kubectl exec -it hello-cretes sh`{{execute}}
 
-Kill the pod
+Exit from the container with the `exit` command and then kill the pod:
 
 `kubectl delete pod hello-cretes`{{execute}}
 
