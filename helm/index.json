@@ -1,0 +1,58 @@
+{
+  "title": "Talend - Helm for Kubernetes (DRAFT)",
+  "description": "Use Helm for Kubernetes to easily deploy applications on your Kubernetes cluster",
+  "difficulty": "beginner",
+  "time": "30 minutes",  
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - Install Helm Server",
+        "text": "steps/install-helm.md"
+      },
+      {
+        "title": "Step 2 - Add charts registry and fetch chart",
+        "text": "steps/chart-registry.md"
+      },   
+      {
+        "title": "Step 3 - Install chart",
+        "text": "steps/install-chart.md"
+      },
+      {
+        "title": "Step 4 - Upgrade and rollback release",
+        "text": "steps/upgrade-rollback.md"
+      },   
+      {
+        "title": "Step 5 - Chart dependencies",
+        "text": "steps/dependencies.md"
+      },      
+      {
+        "title": "Step 6 - Tags and conditions",
+        "text": "steps/tags-conditions.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "credits": "",
+      "courseData": "env-init.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "foo.txt",
+          "target": "~/"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "showdashboard": true,
+    "dashboards": [{"name": "Display 80", "port": 80}, {"name": "Display 8080", "port": 8080}]    
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}
