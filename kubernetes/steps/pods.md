@@ -1,16 +1,16 @@
-This will show you how to deploy a kubernetes manifest to create a single pod with and image from the docker hub that span a simple hello-world web application
+This will show you how to deploy a Kubernetes manifest to create a single pod with an image from the Docker hub which starts a simple hello-world web application
 
 ## Task
 
-You need to jump into the folder used for this workshop:
+You first need to jump into the folder used for this workshop:
 
 `cd talend/kubernetes/hello-world`{{execute}}
 
-Display the pods manifest just to see how it looks:
+Display the pod manifest just to see how it looks like:
 
 `clear; cat pod.yaml`{{execute}}
 
-Deploy the pod into kubernetes and watch the second terminal to see how the pod is comming up:
+Deploy the pod into Kubernetes and watch the second terminal to see how the pod is coming up:
 
 `kubectl create -f pod.yaml`{{execute}}
 
