@@ -11,9 +11,9 @@ In this step you will learn how to check for chart dependencies and how to updat
 </p>
 </details>
 
-For the purpose of learning about dependencies let's delete the folder `talend-infrastructure/charts`:
+For the purpose of learning about dependencies let's rename the folder `talend-infrastructure/charts` to `talend-infrastructure/subcharts`:
 
-`rm -r talend-infrastructure/chart`{{execute}}
+`mv talend-infrastructure/charts talend-infrastructure/subcharts`{{execute}}
 
 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTguMzYzIDguNDY0bDEuNDMzIDEuNDMxLTEyLjY3IDEyLjY2OS03LjEyNSAxLjQzNiAxLjQzOS03LjEyNyAxMi42NjUtMTIuNjY4IDEuNDMxIDEuNDMxLTEyLjI1NSAxMi4yMjQtLjcyNiAzLjU4NCAzLjU4NC0uNzIzIDEyLjIyNC0xMi4yNTd6bS0uMDU2LTguNDY0bC0yLjgxNSAyLjgxNyA1LjY5MSA1LjY5MiAyLjgxNy0yLjgyMS01LjY5My01LjY4OHptLTEyLjMxOCAxOC43MThsMTEuMzEzLTExLjMxNi0uNzA1LS43MDctMTEuMzEzIDExLjMxNC43MDUuNzA5eiIvPjwvc3ZnPg==">To check if the chart can be installed, simulate an install and display the output in the terminal. Use `infra` as Helm Release name.
 

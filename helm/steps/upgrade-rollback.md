@@ -32,9 +32,7 @@ Let's see now what happens if we rollback to revision 1:
 
 `helm rollback kickoff 1`{{execute}}
 
-Execute again `helm history kickoff`{{execute}} and `kubectl get pods`{{execute}}
-
-The REVISION field is incremented to 3 but the chart version is the same as in revision 1
+Execute again `helm history kickoff`{{execute}}. The REVISION field is incremented to 3 but the chart version is the same as in revision 1.
 
 You should now also have only one pod running: 
 

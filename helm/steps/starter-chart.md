@@ -16,9 +16,9 @@ Starter charts are regular charts which function as templates for new charts. Th
 </p>
 </details>
 
-Copy the `starter-chart` folder to your `$HELM_HOME/starters` (.helm/starters).
+Move the `starter-chart` folder to your `$HELM_HOME/starters` (.helm/starters).
 
-`cp -r starter-chart .helm/starters`{{execute}}
+`mv starter-chart .helm/starters`{{execute}}
 
 Create now a new chart called `hello-greece` using the create command with the `--starter` flag:
 
@@ -55,7 +55,16 @@ You are now ready to install the chart.
 </p>
 </details>
 
-Execute the following command to find out the service port exposed by k8s (the port will be in the range 30000-32767):
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTguMzYzIDguNDY0bDEuNDMzIDEuNDMxLTEyLjY3IDEyLjY2OS03LjEyNSAxLjQzNiAxLjQzOS03LjEyNyAxMi42NjUtMTIuNjY4IDEuNDMxIDEuNDMxLTEyLjI1NSAxMi4yMjQtLjcyNiAzLjU4NCAzLjU4NC0uNzIzIDEyLjIyNC0xMi4yNTd6bS0uMDU2LTguNDY0bC0yLjgxNSAyLjgxNyA1LjY5MSA1LjY5MiAyLjgxNy0yLjgyMS01LjY5My01LjY4OHptLTEyLjMxOCAxOC43MThsMTEuMzEzLTExLjMxNi0uNzA1LS43MDctMTEuMzEzIDExLjMxNC43MDUuNzA5eiIvPjwvc3ZnPg==">Check the status of pods to see when the application has been full deployed:
+
+<details><summary>Solution</summary>
+<p>
+`kubectl get pods -w`
+<br/>
+</p>
+</details>
+
+When the `hello-greece` pod is running find out the service port exposed by k8s (the port will be in the range 30000-32767):
 
 `kubectl get --namespace default -o jsonpath='{.spec.ports[0].nodePort}{"\n"}' services kickoff18-hello-greece`{{execute}}
 
