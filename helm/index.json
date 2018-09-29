@@ -28,6 +28,10 @@
       {
         "title": "Step 6 - Tags and conditions",
         "text": "steps/tags-conditions.md"
+      },      
+      {
+        "title": "Step 7 - Use Talend's starter-chart",
+        "text": "steps/starter-chart.md"
       }
     ],
     "intro": {

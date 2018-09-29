@@ -22,13 +22,14 @@ If you want to find out what else `helm repo` can do, execute the following comm
 
 `helm repo --help`{{execute}}
 
-Now that you have added `talend` registry to your Helm client let's fetch the chart `nginx-web` from this registry. 
-Before we download the chart, let's look at some details of this chart. You can do this with the command:
+Now that you have added `talend` registry to your Helm client let's fetch the chart `hello-world` from this registry.
+This chart packages the same application you have worked with in the Kubernetes workshop.
+Before you download the chart, let's look at some details of this chart (version, app version, description):
 
-`helm search talend/nginx-web`{{execute}}
+`helm search talend/hello-world`{{execute}}
 
-Use the following command to fetch the `nginx-web` chart and in the same time unpack it in the current folder:
+Use the following command to fetch the `hello-world` chart and in the same time unpack it in the current folder:
 
-`helm fetch --untar talend/nginx-web`{{execute}}
+`helm fetch --untar talend/hello-world`{{execute}}
 
-The command above has created a `nginx-web` folder inside the current folder.
+The command above has created a `hello-world` folder inside the current folder.

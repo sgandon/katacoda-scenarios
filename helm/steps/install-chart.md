@@ -1,18 +1,20 @@
-In this step you will install the `nginx-web` chart in the k8s cluster.
+In this step you will install the `hello-world` chart in the k8s cluster.
 
 ## Task
 
-Before you install the chart, open the file `nginx-web/values.yaml` and replace `ClusterIP` with `NodePort` for the value `service.type`. This will make the service available outside the cluster.
+Helm provides two commands which are recommended to be used before installing a chart:
+* `helm lint` checks the formatting of the manifest files
+* `helm --debug --dry-run` simulates an install. The flag "`--debug`" displays the output of the install in the console.
 
-Helm provides 2 commands which are recommended to be used before installing a chart. `helm lint` checks the formatting of the manifest files and `helm --debug --dry-run` simulates an install. The flag `--debug` displays the output of the install in the console.
+Let's execute these command and check their output:
 
-`helm lint nginx-web`{{execute}}
+`helm lint hello-world`{{execute}}
 
-`helm install nginx-web --debug --dry-run`{{execute}}
+`helm install hello-world --debug --dry-run`{{execute}}
 
-Now you are ready to install the chart in k8s:
+The chart is now ready to be installed. Every time a chart is installed, Helm will assign it a new release name unless you explicitly overwrite it. You can overwrite the default name with the "`--name`" flag. Let's use `kickoff` as our release name:
 
-`helm install nginx-web --name nginx`{{execute}}
+`helm install hello-world --name kickoff`{{execute}}
 
 List all Helm/k8s applications/releases with the following command:
 
@@ -20,10 +22,14 @@ List all Helm/k8s applications/releases with the following command:
 
 Please note the columns REVISION, CHART and APP VERSION.
 
-Execute the following command to find out the service port exposed by k8s. This port will be in the range 30000-32767.
+You can also see the resources deployed by a release with the following command:
 
-`kubectl get --namespace default -o jsonpath='{.spec.ports[0].nodePort}{"\n"}' services nginx-nginx-web`{{execute}}
+`helm status kickoff`{{execute}}
 
-In the upper side of the terminal (title bar) you have one `+` sign. Click on it and choose option `Select port to view on Host 1` from the popup menu. This will open a new tab in the browser where you can enter the port displayed by the previous command. After you enter the port click `Display Port`. The ngix welcome page will appear which confirms that the application is up and running in the k8s cluster. 
+Execute the following command to find out the service port exposed by k8s (the port will be in the range 30000-32767):
+
+`kubectl get --namespace default -o jsonpath='{.spec.ports[0].nodePort}{"\n"}' services kickoff-hello-world`{{execute}}
+
+In the upper side of the terminal (title bar) you have a "`+`" sign. Click on it and choose option "`Select port to view on Host 1`" from the popup menu. This will open a new tab in the browser where you can enter the port displayed by the previous command. After you enter the port click "`Display Port`". The hello-world welcome page will appear which confirms that the application is up and running in the k8s cluster. 
 
 Let's move to the next step and see how we can perform an upgrade and a rollback on the Helm release.
