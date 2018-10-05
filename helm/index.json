@@ -2,7 +2,7 @@
   "title": "Talend Workshop on Helm",
   "description": "Learn how to use Helm to easily deploy applications on your Kubernetes clusters",
   "difficulty": "beginner",
-  "time": "30 minutes",  
+  "time": "1h30 minutes",  
   "details": {
     "steps": [
       {
