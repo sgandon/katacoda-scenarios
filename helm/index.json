@@ -45,7 +45,7 @@
     "assets": {
       "host01": [
         {
-          "file": "rbac-config-yaml",
+          "file": "rbac-config.yaml",
           "target": "~/"
         }
       ]
