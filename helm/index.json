@@ -41,14 +41,6 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "rbac-config.yaml",
-          "target": "~/"
-        }
-      ]
     }
   },
   "environment": {
