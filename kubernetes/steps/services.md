@@ -36,7 +36,8 @@ As a small exercise, please try to find out the *`IP`* of the `hello-world` pod 
 <p>
 Run the following command and check the field IP:
 
-`kubectl describe pod hello-world`{{execute}}
+`kubectl get pod hello-world -o jsonpath='{.status.podIP}';echo`{{execute}}
+
 
 Compare it with the value of the Service's Endpoints field.
 </p>
