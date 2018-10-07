@@ -59,7 +59,7 @@ You are now ready to install the chart.
 
 <details><summary>Solution</summary>
 <p>
-`kubectl get pods -w`
+`kubectl get pods -w`{{execute}}
 <br/>
 </p>
 </details>

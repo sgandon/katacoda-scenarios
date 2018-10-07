@@ -2,13 +2,13 @@ In this step you will add a chart registry to your Helm installation.
 
 ## Task
 
-Let's look first at what registries are avaible from our Helm client:
+Let's look first at what registries are available from our Helm client:
 
 `helm repo list`{{execute}}
 
 Helm installs the official k8s chart registry called `stable` and also a local chart registry called `local`.
 
-Now let's add another repositry to our Helm client. Copy the following command and paste it into the terminal. Then replace `<password>` with the right password and press enter:
+Now let's add another repository to our Helm client. Copy the following command and paste it into the terminal. Then replace `<password>` with the right password and press enter:
 
 `helm repo add talend https://talendregistry.jfrog.io/talendregistry/tlnd-helm-kickoff-2018 --username kickoff-user-ro --password <thepassword>`
 
