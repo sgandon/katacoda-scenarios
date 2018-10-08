@@ -1,1 +1,1 @@
-ssh root@host01 "curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash; "
+ssh root@host01 "wget https://storage.googleapis.com/kubernetes-helm/helm-v2.10.0-linux-386.tar.gz; tar -zxvf helm-v2.10.0-linux-386.tar.gz; mv linux-386/helm /usr/local/bin/helm; "
