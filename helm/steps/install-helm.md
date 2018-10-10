@@ -6,7 +6,15 @@ If you check Helm's version you will see that Helm Server, also called Tiller, c
 
 `helm version`{{execute}}
 
-Use the following command to install Helm Server:
+In order to intall Helm Server you will need to clone a github repo:
+
+`git clone https://github.com/sgandon/katacoda-scenarios.git`{{execute}}
+
+and then run the following command to create a Service Account inside the k8s cluster:
+
+`kubectl create -f katacoda-scenarios/helm/assets/rbac-config.yaml`{{execute}}
+
+Now you are ready to install Helm Server:
 
 `helm init --service-account tiller`{{execute}}
 
