@@ -21,7 +21,7 @@ Then you can look at what is a node, you can see the details of the virtual mach
 
 Since we have two terminals, let's setup the second terminal to always display the current states of several k8s objects (e.g. Pods and Services) running in the k8s cluster. In the upper terminal execute the following command:
 
-`ifconfig ens3 | grep "inet addr"`{{execute}}
+`ifconfig ens4 | grep "inet addr"`{{execute}}
 
 Grab the IP address and replace it in the following command:
 
