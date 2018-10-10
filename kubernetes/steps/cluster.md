@@ -19,6 +19,13 @@ Then you can look at what is a node, you can see the details of the virtual mach
 
 `kubectl describe node node01`{{execute}}
 
+
+###Configuration
+Clone the following repository with the next command
+
+`git clone https://github.com/sgandon/katacoda-scenarios.git; mv katacoda-scenarios/kubernetes/assets/ talend; rm -rf katacoda-scenarios`{{execute}}
+
+
 Since we have two terminals, let's setup the second terminal to always display the current states of several k8s objects (e.g. Pods and Services) running in the k8s cluster. In the upper terminal execute the following command:
 
 `ifconfig ens4 | grep "inet addr"`{{execute}}
