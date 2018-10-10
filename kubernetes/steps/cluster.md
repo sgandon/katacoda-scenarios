@@ -25,6 +25,7 @@ Since we have two terminals, let's setup the second terminal to always display t
 
 Grab the IP address and replace it in the following command:
 
+!!! WARNING, this has to be run in the bottom terminal
 `mkdir .kube; scp <ip adress>:/root/.kube/config /root/.kube/config; watch kubectl get po,svc,cm,deploy`
 
 Then copy/paste the command in the bottom terminal and execute it.
