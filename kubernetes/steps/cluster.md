@@ -20,7 +20,7 @@ Then you can look at what is a node, you can see the details of the virtual mach
 `kubectl describe node node01`{{execute}}
 
 
-###Configuration
+## Configuration
 Clone the following repository with the next command
 
 `git clone https://github.com/sgandon/katacoda-scenarios.git; mv katacoda-scenarios/kubernetes/assets/ talend; rm -rf katacoda-scenarios`{{execute}}
