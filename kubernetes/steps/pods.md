@@ -24,8 +24,8 @@ Get the logs of the container. In this case you only have one container therefor
 
 Attach to the `hello-cretes` container and run `sh` (very similar to a docker exec):
 
-`kubectl exec -it hello-cretes sh`{{execute}}
-`ls`{{execute}}
+`kubectl exec -it hello-cretes sh`{{execute}}<br/>
+`ls`{{execute}}<br/>
 `ps`{{execute}}
 
 You can see the the sh process and the sleep processes running.
