@@ -52,7 +52,7 @@ Then delete the `hello-world` Pod and deploy the `file-configmap.yaml` and `pod.
 `kubectl exec -it hello-world sh`{{execute}}<br/>
 `cd /etc/config`{{execute}}<br/>
 `ls -l`{{execute}}<br/>
-`cat appplication.properties`{{execute}}<br/>
+`cat application.properties`{{execute}}<br/>
 </p>
 </details>
 
