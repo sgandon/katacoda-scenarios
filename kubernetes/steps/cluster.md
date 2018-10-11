@@ -28,7 +28,7 @@ Clone the following repository with the next command
 
 Since we have two terminals, let's setup the second terminal to always display the current states of several k8s objects (e.g. Pods and Services) running in the k8s cluster. In the upper terminal execute the following command:
 
-`ifconfig ens4 | grep "inet addr"`{{execute}}
+`kubectl get nodes master -o jsonpath='{.status.addresses[0].address}{"\n"}'`{{execute}}
 
 Grab the IP address and replace it in the following command:
 
