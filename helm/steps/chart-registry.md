@@ -10,7 +10,7 @@ Helm installs the official k8s chart registry called `stable` and also a local c
 
 Now let's add another repository to our Helm client. Copy the following command and paste it into the terminal. Then replace `<password>` with the right password and press enter:
 
-`helm repo add talend https://talendregistry.jfrog.io/talendregistry/tlnd-helm-kickoff-2018 --username kickoff-user-ro --password <thepassword>`
+`helm repo add talend https://sgandon.github.io/katacoda-scenarios/`{{execute}}
 
 Execute again `helm repo list`{{execute}} and see the new `talend` registry in the list.
 

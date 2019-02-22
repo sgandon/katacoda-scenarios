@@ -1,9 +1,28 @@
 apiVersion: v1
 entries:
+  hello-world:
+  - apiVersion: v1
+    appVersion: "1"
+    created: 2019-02-22T15:46:41.476883+01:00
+    description: Chart created for the Talend Helm training
+    digest: 542c0d09076ccceb335b1155977ed2e7611651408a8cb00520189af3fca0ada7
+    home: https://www.talend.com/products/
+    keywords:
+    - Talend
+    - hello-world
+    maintainers:
+    - email: support@talend.com
+      name: Talend
+    name: hello-world
+    sources:
+    - https://github.com/Talend/
+    urls:
+    - https://sgandon.github.io/katacoda-scenarios/hello-world-0.1.0.tgz
+    version: 0.1.0
   talend-infrastructure:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-02-22T11:53:49.364123+01:00
+    created: 2019-02-22T15:46:41.480482+01:00
     description: A Helm chart for Talend Infrastructure services
     digest: 24c1c924d672927680d003d176edb2fa9a9126fb7baa49172e61aa3012ba595d
     home: https://www.talend.com/products/platform/
@@ -16,4 +35,4 @@ entries:
     urls:
     - https://sgandon.github.io/katacoda-scenarios/talend-infrastructure-2.0.0.tgz
     version: 2.0.0
-generated: 2019-02-22T11:53:49.360328+01:00
+generated: 2019-02-22T15:46:41.473855+01:00
