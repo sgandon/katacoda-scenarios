@@ -1,0 +1,19 @@
+apiVersion: v1
+entries:
+  talend-infrastructure:
+  - apiVersion: v1
+    appVersion: 0.1.0
+    created: 2019-02-22T11:53:49.364123+01:00
+    description: A Helm chart for Talend Infrastructure services
+    digest: 24c1c924d672927680d003d176edb2fa9a9126fb7baa49172e61aa3012ba595d
+    home: https://www.talend.com/products/platform/
+    keywords:
+    - talend
+    - infrastructure
+    name: talend-infrastructure
+    sources:
+    - https://github.com/Talend/helm-charts-infrastructure
+    urls:
+    - https://sgandon.github.io/katacoda-scenarios/talend-infrastructure-2.0.0.tgz
+    version: 2.0.0
+generated: 2019-02-22T11:53:49.360328+01:00
