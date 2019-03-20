@@ -26,10 +26,10 @@ Attach to the redis pod and run the command `redis-cli ping`. You should receive
 <p>
 `kubectl get pods`{{execute}}
 <br/>
-`kubectl exec -it redis-pod redis-cli ping`{{execute}}
+`kubectl exec -it $(kubectl get --no-headers=true pods -l app=infra-redisembedded -o custom-columns=:metadata.name) redis-cli ping`{{execute}}
 <br/>
 
-*Note: Don't forget to replace `redis-pod` with the actual pod name.*
+*Note: the $(...) command is just a way to discover dynamically the pod name that is randomly set.*
 </p>
 </details>
 
