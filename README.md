@@ -15,9 +15,11 @@ see this [helm document](https://github.com/helm/helm/blob/master/docs/chart_rep
 The registry can be found here : https://sgandon.github.io/katacoda-scenarios/
 
 In order to add a new chart you need to :
+```
 $ helm package mychart
 $ cp mychart-0.1.0.tgz docs
 $ helm repo index docs --url https://sgandon.github.io/katacoda-scenarios/
 $ git add -i
 $ git commit -av
 $ git push origin master
+```
