@@ -16,15 +16,15 @@ Deploy the Pod into Kubernetes and watch the second terminal to see how the Pod 
 
 Get the Pod status and description:
 
-`kubectl describe pod hello-cretes`{{execute}}
+`kubectl describe pod hello-world`{{execute}}
 
 Get the logs of the container. In this case you only have one container therefore it is not necessary to specify the container name:
 
-`kubectl logs hello-cretes`{{execute}}
+`kubectl logs hello-world`{{execute}}
 
-Attach to the `hello-cretes` container and run `sh` (very similar to a docker exec):
+Attach to the `hello-world` container and run `sh` (very similar to a docker exec):
 
-`kubectl exec -it hello-cretes sh`{{execute}}<br/>
+`kubectl exec -it hello-world sh`{{execute}}<br/>
 `ls`{{execute}}<br/>
 `ps`{{execute}}
 
@@ -32,5 +32,4 @@ You can see the the sh process and the sleep processes running.
 
 Exit from the container with the `exit` command and then kill the Pod:
 
-`kubectl delete pod hello-cretes`{{execute}}
-
+`kubectl delete pod hello-world`{{execute}}
