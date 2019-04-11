@@ -8,4 +8,4 @@ spec:
   containers:
   - name: myapp-container
     image: busybox
-    command: ['sh', '-c', 'echo Hello World! && sleep 3600']
+    command: ['sh', '-c', 'echo Hello Talend! && sleep 3600']
