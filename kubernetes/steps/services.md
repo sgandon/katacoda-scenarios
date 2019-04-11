@@ -19,9 +19,13 @@ Now let's create a k8s Service to get access to this pod:
 
 `kubectl create -f service.yaml`{{execute}}
 
+The service finds the pod using the `selector` that finds pods with label `hello-world-app` value.
+
 Let's check we can call the Service:
 
 `kubectl run  curl --restart=Never --image=appropriate/curl --attach=true --rm  http://hello-world`{{execute}}
+
+This command starts a pod using `appropriate/curl` Docker image and performs a curl to `http://hello-world`.
 
 Let's have a look at the Service description:
 
