@@ -26,4 +26,11 @@ Once the Tiller pod is running, kill the previous command (CTRL-C) and check aga
 
 `helm version`{{execute}}
 
+You should have this output:
+
+```bash
+Client: &version.Version{SemVer:"v2.10.0", GitCommit:"9ad53aac42165a5fadc6c87be0dea6b115f93090", GitTreeState:"clean"}
+Server: &version.Version{SemVer:"v2.10.0", GitCommit:"9ad53aac42165a5fadc6c87be0dea6b115f93090", GitTreeState:"clean"}
+```
+
 Now that Tiller is up and running let's move to the next step

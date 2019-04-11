@@ -41,3 +41,5 @@ Attach to the redis pod and run the command `redis-cli ping`. You should receive
 <br/>
 </p>
 </details>
+
+Congratulations, you have finished your Helm workshop!
