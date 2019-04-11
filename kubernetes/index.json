@@ -2,7 +2,7 @@
   "title": "Talend Workshop on Kubernetes",
   "description": "Learn how to get started with Kubernetes concepts and the kubectl command line",
   "difficulty": "beginner",
-  "time": "1h30 minutes",
+  "time": "1h",
   "details": {
     "steps": [{
       "title": "Step 1 - Exploring the cluster",
