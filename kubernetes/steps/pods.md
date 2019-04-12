@@ -22,6 +22,11 @@ Get the logs of the container. In this case you only have one container therefor
 
 `kubectl logs hello-world`{{execute}}
 
+We must insist that this is a very handy command for developers,
+let's try to see the logs of the etc instance in the kubernetes cluster
+
+`kubectl logs -n kube-system etcd-master`{{execute}}
+
 Attach to the `hello-world` container and run `sh` (very similar to a docker exec):
 
 `kubectl exec -it hello-world sh`{{execute}}<br/>
