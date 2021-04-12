@@ -6,9 +6,9 @@ Let's look first at what registries are available from our Helm client:
 
 `helm repo list`{{execute}}
 
-Helm installs the official k8s chart registry called `stable` and also a local chart registry called `local`.
+The list should be empty.
 
-Now let's add another repository to our Helm client. Copy the following command and paste it into the terminal:
+Now let's add a repository to our Helm client. Copy the following command and paste it into the terminal:
 
 `helm repo add talend https://sgandon.github.io/katacoda-scenarios/`{{execute}}
 
@@ -16,7 +16,7 @@ Execute again `helm repo list`{{execute}} and see the new `talend` registry in t
 
 You can now list the charts from your `talend` registry:
 
-`helm search talend`{{execute}}
+`helm search repo talend`{{execute}}
 
 If you want to find out what else `helm repo` can do, execute the following command:
 
@@ -26,7 +26,7 @@ Now that you have added `talend` registry to your Helm client let's fetch the ch
 This chart packages the same application you have worked with in the Kubernetes workshop.
 Before you download the chart, let's look at some details of this chart (version, app version, description):
 
-`helm search talend/hello-world`{{execute}}
+`helm search repo talend/hello-world`{{execute}}
 
 Use the following command to fetch the `hello-world` chart and in the same time unpack it in the current folder:
 
