@@ -37,7 +37,7 @@ Attach to the redis pod and run the command `redis-cli ping`. You should receive
 
 <details><summary>Solution</summary>
 <p>
-`helm delete --purge infra`{{execute}}
+`helm delete infra`{{execute}}
 <br/>
 </p>
 </details>
