@@ -19,7 +19,7 @@ For the purpose of learning about dependencies let's rename the folder `talend-i
 
 <details><summary>Solution</summary>
 <p>
-`helm install talend-infrastructure --name infra --debug --dry-run`{{execute}}
+`helm install infra ./talend-infrastructure --debug --dry-run`{{execute}}
 <br/>
 </p>
 </details>
@@ -28,7 +28,7 @@ Right, the chart is missing dependencies! You can list the chart's dependencies 
 
 `helm dep ls talend-infrastructure`{{execute}}
 
-Take a look at `talend-infrastructure/requirements.yaml` to see where and how dependencies are defined. All dependencies should have been in the `talend-infrastructure/charts` folder but, of course, they don't exist because we deleted that folder.
+Take a look at `talend-infrastructure/Chart.yaml` to see where and how dependencies are defined. All dependencies should have been in the `talend-infrastructure/charts` folder but, of course, they don't exist because we deleted that folder.
 
 Let's recreate the `talend-infrastructure/charts` folder by updating the chart's dependencies:
 
@@ -40,16 +40,16 @@ And now look again at the `talend-infrastructure/charts` folder.
 
 <details><summary>Solution</summary>
 <p>
-`helm install talend-infrastructure --name infra`{{execute}}
+`helm install infra ./talend-infrastructure`{{execute}}
 <br/>
 </p>
 </details>
 
-Unfortunately that install has failed because, by default, the infrastructure chart doesn't create any objects. 
+Unfortunately that install has not installed anything, by default, the infrastructure chart doesn't create any objects. 
 You will have to explicitly set which infrastructure service you want to create. 
 This can be done through tags and/or conditions which we are going to tackle down in the next step. 
 
-However, even if the installed has failed, Helm has created a release which we need to delete. 
+However, even if the installed did not install anything, Helm has created a release which we need to delete. 
 
 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTguMzYzIDguNDY0bDEuNDMzIDEuNDMxLTEyLjY3IDEyLjY2OS03LjEyNSAxLjQzNiAxLjQzOS03LjEyNyAxMi42NjUtMTIuNjY4IDEuNDMxIDEuNDMxLTEyLjI1NSAxMi4yMjQtLjcyNiAzLjU4NCAzLjU4NC0uNzIzIDEyLjIyNC0xMi4yNTd6bS0uMDU2LTguNDY0bC0yLjgxNSAyLjgxNyA1LjY5MSA1LjY5MiAyLjgxNy0yLjgyMS01LjY5My01LjY4OHptLTEyLjMxOCAxOC43MThsMTEuMzEzLTExLjMxNi0uNzA1LS43MDctMTEuMzEzIDExLjMxNC43MDUuNzA5eiIvPjwvc3ZnPg==">Try to list existing releases and delete the `infra` one.
 
@@ -57,7 +57,7 @@ However, even if the installed has failed, Helm has created a release which we n
 <p>
 `helm ls`{{execute}}
 <br/>
-`helm delete --purge infra`{{execute}}
+`helm delete infra`{{execute}}
 <br/>
 </p>
 </details>
