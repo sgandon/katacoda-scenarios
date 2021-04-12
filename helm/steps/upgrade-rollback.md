@@ -40,6 +40,6 @@ You should now also have only one pod running:
 
 You have successfuly upgraded and rollbacked a release. Now you can delete the release before we move to the next step:
 
-`helm delete --purge helm-training`{{execute}}
+`helm delete helm-training`{{execute}}
 
 This command removes the release and all k8s objects belonging to it.
