@@ -10,11 +10,11 @@ Let's execute these commands and check their output:
 
 `helm lint hello-world`{{execute}}
 
-`helm install hello-world --debug --dry-run`{{execute}}
+`helm install hello-world ./hello-world --debug --dry-run`{{execute}}
 
-The chart is now ready to be installed. Every time a chart is installed, Helm will assign it a new release name unless you explicitly overwrite it. You can overwrite the default name with the "`--name`" flag. Let's use `helm-training` as our release name:
+The chart is now ready to be installed. Every time a chart is installed, Helm will need a release name to be specifed. Let's use `helm-training` as our release name:
 
-`helm install hello-world --name helm-training`{{execute}}
+`helm install helm-training ./hello-world`{{execute}}
 
 List all Helm/k8s applications/releases with the following command:
 
