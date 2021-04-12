@@ -34,5 +34,5 @@ entries:
     - https://github.com/Talend/helm-charts-infrastructure
     urls:
     - https://sgandon.github.io/katacoda-scenarios/talend-infrastructure-2.0.0.tgz
-    version: 2.0.0
+    version: 4.7.3
 generated: 2019-02-22T15:46:41.473855+01:00
